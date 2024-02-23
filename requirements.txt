@@ -30,3 +30,5 @@ tensorboard
 rembg
 segment_anything
 gradio==3.50.2
+fire
+streamlit
