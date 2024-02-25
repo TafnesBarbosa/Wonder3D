@@ -222,6 +222,7 @@ def run_pipeline(pipeline, cfg, single_image, guidance_scale, steps, seed, crop_
     bsz = out.shape[0] // 2
     normals_pred = out[:bsz]
     images_pred = out[bsz:]
+    print("Number of pictures:", bsz)
     num_views = 6
     if write_image:
         VIEWS = ['front', 'front_right', 'right', 'back', 'left', 'front_left']
