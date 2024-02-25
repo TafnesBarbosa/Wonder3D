@@ -40,7 +40,7 @@ model:
     finite_difference_eps: progressive
     isosurface:
       method: mc
-      resolution: 192
+      resolution: 512
       chunk: 2097152
       threshold: 0.
     xyz_encoding_config:
@@ -59,7 +59,7 @@ model:
       activation: ReLU
       output_activation: none
       n_neurons: 64
-      n_hidden_layers: 1
+      n_hidden_layers: 3
       sphere_init: true
       sphere_init_radius: 0.5
       weight_norm: true
@@ -74,7 +74,7 @@ model:
       activation: ReLU
       output_activation: none
       n_neurons: 64
-      n_hidden_layers: 2
+      n_hidden_layers: 4
     color_activation: sigmoid
 
 system:
