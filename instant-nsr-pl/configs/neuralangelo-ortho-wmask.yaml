@@ -7,7 +7,7 @@ dataset:
   root_dir: /home/xiaoxiao/Workplace/wonder3Dplus/outputs/joint-twice/aigc/cropsize-224-cfg1.0
   cam_pose_dir: null
   scene: scene_name
-  imSize: [1024, 1024]  # should use larger res, otherwise the exported mesh has wrong colors
+  imSize: [2048, 2048]  # should use larger res, otherwise the exported mesh has wrong colors
   camera_type: ortho
   apply_mask: true
   camera_params: null
@@ -45,7 +45,7 @@ model:
       threshold: 0.
     xyz_encoding_config:
       otype: ProgressiveBandHashGrid
-      n_levels: 12 # 12 modify
+      n_levels: 14 # 12 modify
       n_features_per_level: 2
       log2_hashmap_size: 19
       base_resolution: 32
@@ -100,12 +100,12 @@ system:
   optimizer:
     name: AdamW
     args:
-      lr: 0.009
+      lr: 0.005
       betas: [0.9, 0.99]
       eps: 1.e-15
     params:
       geometry:
-        lr: 0.0009
+        lr: 0.0005
       texture:
         lr: 0.01
       variance:
