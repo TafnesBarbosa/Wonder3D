@@ -7,7 +7,7 @@ dataset:
   root_dir: /home/xiaoxiao/Workplace/wonder3Dplus/outputs/joint-twice/aigc/cropsize-224-cfg1.0
   cam_pose_dir: null
   scene: scene_name
-  imSize: [2048, 2048]  # should use larger res, otherwise the exported mesh has wrong colors
+  imSize: [1024, 1024]  # should use larger res, otherwise the exported mesh has wrong colors
   camera_type: ortho
   apply_mask: true
   camera_params: null
@@ -135,7 +135,7 @@ export:
   ortho_scale: 1.35   #modify
 
 trainer:
-  max_steps: 15000
+  max_steps: 8000
   log_every_n_steps: 100
   num_sanity_val_steps: 0
   val_check_interval: 4000
