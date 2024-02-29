@@ -105,11 +105,11 @@ system:
       eps: 1.e-15
     params:
       geometry:
-        lr: 0.001
+        lr: 0.002
       texture:
-        lr: 0.01
+        lr: 0.02
       variance:
-        lr: 0.001
+        lr: 0.002
   constant_steps: 500
   scheduler:
     name: SequentialLR
